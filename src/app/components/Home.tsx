@@ -5,8 +5,8 @@ import { motion } from "motion/react";
 
 // Helper function to calculate time remaining
 function calculateTimeLeft() {
-  // Target date: March 23, 2026 09:00:00 (since the event says 2026 in the subtitle!)
-  const targetDate = new Date("March 23, 2026 09:00:00").getTime();
+  // Target date: March 23, 2026 09:00:00 IST (UTC+05:30)
+  const targetDate = new Date("2026-03-23T09:00:00+05:30").getTime();
   const now = new Date().getTime();
   const difference = targetDate - now;
 
@@ -48,9 +48,9 @@ function CountdownTimer() {
         { label: "Minutes", value: timeLeft.minutes },
         { label: "Seconds", value: timeLeft.seconds },
       ].map((item, index) => (
-        <div key={index} className="flex flex-col items-center justify-center bg-slate-900/80 backdrop-blur-sm border border-cyan-400/30 rounded-lg p-3 w-20 shadow-[0_0_15px_rgba(34,211,238,0.15)]">
-          <span className="text-2xl font-bold tracking-wider text-cyan-400">
-            {item.value.toString().padStart(2, "0")}
+        <div key={index} className="flex flex-col items-center justify-center bg-slate-900/80 backdrop-blur-sm border border-cyan-400/30 rounded-lg p-3 w-20 md:w-24 shadow-[0_0_15px_rgba(34,211,238,0.15)]">
+          <span className="text-2xl font-bold tracking-wider text-cyan-400 tabular-nums">
+             {item.value.toString().padStart(2, "0")}
           </span>
           <span className="text-xs uppercase tracking-wider text-gray-400 mt-1">
             {item.label}
