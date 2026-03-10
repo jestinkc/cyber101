@@ -79,7 +79,7 @@ export function About() {
                 <span className="text-cyan-400">Format:</span> In-Person Workshop
               </div>
               <div>
-                <span className="text-cyan-400">Target Audience:</span> Engineering Students (1st & 2nd Year)
+                <span className="text-cyan-400">Target Audience:</span> Students from Schools and Colleges (All Years & All Streams)
               </div>
             </div>
           </motion.div>
