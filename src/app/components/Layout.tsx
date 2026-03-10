@@ -48,7 +48,7 @@ export function Layout() {
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-4">
                 <img src="/hive logo.png" alt="Hive Logo" className="h-8 md:h-10 w-auto" />
-                <img src="/mulaen.png" alt="muLearn Logo" className="h-8 md:h-10 w-auto" />
+                <img src="/logo.svg" alt="muLearn Logo" className="h-8 md:h-10 w-auto" />
               </div>
               {/* Mobile menu button */}
               <button
